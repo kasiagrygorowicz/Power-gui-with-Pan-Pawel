@@ -1,3 +1,5 @@
 {
-  "login-label": "Zaloguj się"
+  "login-label": "Zaloguj się",
+  "email" : "Email",
+  "psw" : "Hasło"
 }
