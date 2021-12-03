@@ -3,5 +3,11 @@
   "email" : "Email",
   "psw" : "Password",
   "new-user-question":"New user?",
-  "signup-redirect":"Sign Up here!"
+  "signup-redirect":"Sign Up here!",
+  "dashboardName":"Seller Dashboard",
+  "settings":"Settings",
+  "accountDetails":"Account Details",
+  "switchAccount":"Switch Account",
+  "addAccount":"Add Account",
+  "logout":"Log out"
 }

@@ -1,5 +1,13 @@
 {
   "login-label": "Zaloguj się",
   "email" : "Email",
-  "psw" : "Hasło"
+  "psw" : "Hasło",
+  "new-user-question":"Nowy uzytkownik?",
+  "signup-redirect":"Załóz konto!",
+  "dashboardName":"Panel sprzedawcy",
+  "settings":"Ustawienia",
+  "accountDetails":"Szczegóły konta",
+  "switchAccount":"Zmień konto",
+  "addAccount":"Dodaj konto",
+  "logout":"Wyloguj"
 }

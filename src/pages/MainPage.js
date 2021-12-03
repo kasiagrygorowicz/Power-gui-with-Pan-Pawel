@@ -1,4 +1,8 @@
+
 function MainPage(){
-    return <h>MainPage</h>
+    return (<div>
+    <h>MainPage</h>
+    
+ </div>);
 }
 export default MainPage;

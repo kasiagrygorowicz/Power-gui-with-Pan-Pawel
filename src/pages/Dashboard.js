@@ -1,14 +1,20 @@
-import {Component} from 'react'
-import Button from 'react-bootstrap/Button'
+import TopNavBar from "../components/TopNavBar";
+import OrdersWidget from "../components/OrdersWidget";
+import { useTranslation } from "react-i18next";
+
+
 
 function Dashboard() {
-  
-        return <div>
-            <h>Dashboard</h>
-            <Button>button</Button>
-            </div>;
+  const { t,i18n } = useTranslation();
    
-    
 
+  return (<div>
+ <TopNavBar lt={t} i18n={i18n.changeLanguage}/>
+ <OrdersWidget />
+ 
+
+
+</div>
+  );
 }
-export default Dashboard
+export default Dashboard;
