@@ -1,8 +1,8 @@
+import { Navigate } from "react-router-dom";
 
 function MainPage(){
-    return (<div>
-    <h>MainPage</h>
-    
- </div>);
+  return (
+    <Navigate to="/login" />
+  );
 }
 export default MainPage;
