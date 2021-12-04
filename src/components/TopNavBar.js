@@ -22,13 +22,14 @@ function TopNavBar(props){
         <Container fluid>
           <Navbar.Brand href="#">{props.lt('dashboardName')}</Navbar.Brand>
           {/* <LanguageController changeLanguage={props.i18n}/> */}
+            <Button onClick={props.toggleTheme}>Toggle theme</Button>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
             placement="end"
-           
           >
+
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id="offcanvasNavbarLabel">{props.lt('settings')}</Offcanvas.Title>
             </Offcanvas.Header>
