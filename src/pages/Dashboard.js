@@ -1,4 +1,4 @@
-import TopNavBar from "../components/TopNavBar";
+import TopNavBar from "../components/layout/TopNavBar";
 import OrdersWidget from "../components/OrdersWidget";
 import { useTranslation } from "react-i18next";
 
@@ -9,7 +9,7 @@ function Dashboard(props) {
    
 
   return (<div>
- <TopNavBar lt={t} i18n={i18n.changeLanguage} toggleTheme={props.toggleTheme}/>
+
  <OrdersWidget />
  
 

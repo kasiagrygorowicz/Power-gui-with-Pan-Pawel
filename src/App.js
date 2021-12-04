@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme} from "./theme";
 import {GlobalStyles} from "./global";
+import Layout from "./components/layout/Layout"
 
 function App() {
 
@@ -30,13 +31,13 @@ function App() {
   return (
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
           <GlobalStyles />
-        <div>
-          <Routes>
-            <Route path="/" exact element={<MainPage />} />
-            <Route path="/login" element={<LoginPage value={t} changeLanguage={changeLanguageHandler} />} />
-            <Route path="/dashboard" element={<Dashboard toggleTheme={toggleTheme} />} />
-          </Routes>
-        </div>
+            <Layout toggleTheme={toggleTheme}>
+              <Routes>
+                <Route path="/" exact element={<MainPage />} />
+                <Route path="/login" element={<LoginPage value={t} changeLanguage={changeLanguageHandler} />} />
+                <Route path="/dashboard" element={<Dashboard  />} />
+              </Routes>
+            </Layout>
       </ThemeProvider>
   );
 }
