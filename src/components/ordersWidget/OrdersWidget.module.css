@@ -1,0 +1,24 @@
+.mainStructure{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width:100%;
+    position: relative;
+    top:10%;
+    left: 5%;
+    right:5%;
+    bottom:15%;
+    
+}
+
+.ordersPosition{
+
+}
+
+.ordersSummaryPosition{
+position: relative; 
+left: 5%;
+
+
+
+}
