@@ -22,11 +22,8 @@ function TopNavBar(props){
     return(
         <StyledNavbar expand={false}>
             <Container fluid>
-            <Col xxl={2}>
                 <Navbar.Brand href="#">{props.lt('dashboardName')}</Navbar.Brand>
                 {/* <LanguageController changeLanguage={props.i18n}/> */}
-            </Col>
-            <Col xxl={2}>
                 <div className={classes.userUtils}>
                     <div className={`rounded-circle ${classes.circle}`}>
                         <MoonFill size={20} className={classes.moonIcon} onClick={props.toggleTheme}  />
@@ -82,7 +79,7 @@ function TopNavBar(props){
                     </Navbar.Offcanvas>
                 </div>
 
-            </Col>
+
 
 
 
