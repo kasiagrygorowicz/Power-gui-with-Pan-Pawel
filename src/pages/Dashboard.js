@@ -17,7 +17,7 @@ function Dashboard(props) {
  <OrdersWidget />
  <OffersRankingWidget/>
  <DailyTipsWidget/>
- {/* <SalesQualityWidget/> */}
+ <SalesQualityWidget/>
  <Footer/>
  
 

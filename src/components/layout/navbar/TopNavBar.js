@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component, useState } from "react";
 import Button from "react-bootstrap/Button";
 import {Container, Nav, Navbar, NavDropdown, Form, FormControl, Footer, Row, Col, Dropdown} from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas"
@@ -7,10 +7,14 @@ import classes from './TopNavBar.module.css'
 import { changeLanguage } from "i18next";
 import LanguageController from "../../LanguageController";
 import {StyledNavbar} from "./TopNavBar.styled";
+import { useTranslation } from "react-i18next";
 
 
 
 function TopNavBar(props){
+    const languages = ['English','Polski']
+    const [selectedLanguage, setSelectedLanguage]=useState(languages[0])
+    const { t, i18n } = useTranslation();
     const accounts = 
     [
         "Megan Thee Stalion",
@@ -27,15 +31,19 @@ function TopNavBar(props){
                     <div className={`rounded-circle ${classes.circle}`}>
                         <MoonFill size={20} className={classes.moonIcon} onClick={props.toggleTheme}  />
                     </div>
-                    <Dropdown className={classes.changeLanguage} align="start">
-                        <Dropdown.Toggle className={classes.utilDropdown} id="dropdown-basic">
-                            Language
+                    <Dropdown className={classes.changeLanguage} align="start" onSelect={(e)=>setSelectedLanguage(e)}>
+                        <Dropdown.Toggle className={classes.utilDropdown} id="dropdown-basic"
+                        >
+                        {selectedLanguage}
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu>
-                            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                            {languages.map(l => 
+                                <Dropdown.Item  eventKey={l} >{l}</Dropdown.Item>
+                                )}
+                            {/* <Dropdown.Item  href="#/action-1">English</Dropdown.Item>
+                            <Dropdown.Item  href="#/action-2">Polski</Dropdown.Item> */}
+                            
                         </Dropdown.Menu>
                     </Dropdown>
                     <Navbar.Toggle className={classes.toggle} aria-controls="offcanvasNavbar" />
