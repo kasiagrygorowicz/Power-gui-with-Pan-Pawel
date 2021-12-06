@@ -37,7 +37,7 @@ function App() {
             <Layout toggleTheme={toggleTheme}>
               <Routes>
                 <Route path="/" exact element={<MainPage />} />
-                <Route path="/login" element={<LoginPage value={t} changeLanguage={changeLanguageHandler} />} />
+                <Route path="/login" element={<LoginPage value={t} changeLanguage={changeLanguageHandler} theme={theme} />} />
                 <Route path="/dashboard" element={<Dashboard  />} />
               </Routes>
             </Layout>

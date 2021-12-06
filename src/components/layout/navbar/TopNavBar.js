@@ -29,7 +29,7 @@ function TopNavBar(props){
                 {/* <LanguageController changeLanguage={props.i18n}/> */}
                 <div className={classes.userUtils}>
                     <div className={`rounded-circle ${classes.circle}`}>
-                        <MoonFill size={20} className={classes.moonIcon} onClick={props.toggleTheme}  />
+                        <MoonFill size={20} className={classes.moonIcon} onClick={props.toggleTheme} style={{ color: '#000' }}  />
                     </div>
                     <Dropdown className={classes.changeLanguage} align="start" onSelect={(e)=>setSelectedLanguage(e)}>
                         <Dropdown.Toggle className={classes.utilDropdown} id="dropdown-basic"

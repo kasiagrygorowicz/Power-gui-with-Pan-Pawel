@@ -2,6 +2,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useTranslation } from "react-i18next";
 import { Alert, FormGroup, FormLabel } from "react-bootstrap";
+import { StyledLoginForm } from './LoginForm.styled';
 
 function LoginForm() {
   const { t, i18n } = useTranslation();
@@ -14,7 +15,9 @@ function LoginForm() {
   function showAlert() {
     
   }
+
   return (
+    <StyledLoginForm>
     <div>
         <Alert
     className={"col-3 text-danger border-3 border-danger hi"}
@@ -23,7 +26,6 @@ function LoginForm() {
   >
     Incorrect email or password!
   </Alert>
-      
       <Form>
         <Form.Group className={"mb-3 col-3"} controlId="formBasicEmail">
           <Form.Label className={"h4 bold"}>{t("email")}</Form.Label>
@@ -54,6 +56,7 @@ function LoginForm() {
       </Form>
       <br></br>
     </div>
+    </StyledLoginForm>
   );
 }
 
