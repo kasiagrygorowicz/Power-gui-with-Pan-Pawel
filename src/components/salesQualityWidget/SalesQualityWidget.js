@@ -3,9 +3,11 @@ import classes from './SalesQualityWidget.module.css'
 import widgetClasses from "../layout/widget/Widget.module.css";
 import { Card } from "react-bootstrap";
 import Improvement from './Improvement';
+import { StyledSalesQualityWitget } from "./StyledSalesQualityWidget.styled";
 
 function SalesQualityWidget(){
 return(
+  <StyledSalesQualityWitget>
     <Card className={widgetClasses.basicShape}>
     <Card.Body>
       <Card.Title className={widgetClasses.titleStyle}>Sales Quality</Card.Title>
@@ -15,6 +17,7 @@ return(
       </div>
     </Card.Body>
   </Card>
+  </StyledSalesQualityWitget>
 )
 }
 

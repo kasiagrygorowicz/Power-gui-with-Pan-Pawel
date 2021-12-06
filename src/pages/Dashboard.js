@@ -1,3 +1,5 @@
+import { StyledDashboard } from './Dashboard.styled';
+
 import TopNavBar from "../components/layout/navbar/TopNavBar";
 import OrdersWidget from "../components/ordersWidget/OrdersWidget";
 import OffersRankingWidget from "../components/rankingWidget/OffersRankingWidget";
@@ -12,17 +14,16 @@ function Dashboard(props) {
   const { t,i18n } = useTranslation();
    
 
-  return (<div>
-
- <OrdersWidget />
- <OffersRankingWidget/>
- <DailyTipsWidget/>
- <SalesQualityWidget/>
- <Footer/>
- 
-
-
-</div>
+  return(
+    <div>
+      <StyledDashboard>
+        <OrdersWidget />
+        <OffersRankingWidget/>
+        <DailyTipsWidget/>
+        <SalesQualityWidget/>
+      </StyledDashboard>
+      <Footer/>
+    </div>
   );
 }
 export default Dashboard;

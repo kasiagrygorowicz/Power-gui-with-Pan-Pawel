@@ -4,10 +4,11 @@ import widgetClasses from "../layout/widget/Widget.module.css";
 import classes from './OrdersWidget.module.css'
 import OrdersSummary from "./OrdersSummary";
 import Widget from "../layout/widget/Widget";
+import { StyledOrdersWitget } from './OrdersWidget.styled';
 
 function OrdersWidget(props) {
   return (
-    
+    <StyledOrdersWitget>
       <Widget className={widgetClasses.basicShape}>
         <Card.Body>
           <Card.Title className={widgetClasses.titleStyle}>Orders</Card.Title>
@@ -23,7 +24,7 @@ function OrdersWidget(props) {
           </div>
         </Card.Body>
       </Widget>
-
+    </StyledOrdersWitget>
       
     
   );
