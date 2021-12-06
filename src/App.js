@@ -4,8 +4,7 @@ import  Dashboard from './pages/Dashboard'
 import MainPage from './pages/MainPage'
 import LoginPage from './pages/LoginPage'
 import "./i18n";
-import {I18nextProvider} from "react-i18next";
-import i18next from "i18next";
+
 import { useTranslation } from "react-i18next";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme} from "./theme";
@@ -32,16 +31,16 @@ function App() {
 
   return (
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-        <I18nextProvider i18n={i18next}>
+        
           <GlobalStyles />
             <Layout toggleTheme={toggleTheme}>
               <Routes>
                 <Route path="/" exact element={<MainPage />} />
-                <Route path="/login" element={<LoginPage value={t} changeLanguage={changeLanguageHandler} theme={theme} />} />
+                <Route path="/login" element={<LoginPage value={t} changeLanguage={changeLanguageHandler} />} />
                 <Route path="/dashboard" element={<Dashboard  />} />
               </Routes>
             </Layout>
-            </I18nextProvider>
+           
       </ThemeProvider>
   );
 }

@@ -1,4 +1,4 @@
-import { Component, useState } from "react";
+import { Component, useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import {Container, Nav, Navbar, NavDropdown, Form, FormControl, Footer, Row, Col, Dropdown} from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas"
@@ -13,8 +13,33 @@ import { useTranslation } from "react-i18next";
 
 function TopNavBar(props){
     const languages = ['English','Polski']
-    const [selectedLanguage, setSelectedLanguage]=useState(languages[0])
     const { t, i18n } = useTranslation();
+    const [selectedLanguage, setSelectedLanguage]=useState(()=>{
+        if(localStorage.getItem('i18nextLng')=="pl"){
+                return languages[1]
+        }
+        return languages[0]
+    })
+   
+
+    function setAppLanguage(e){
+        setSelectedLanguage(e);
+        if(selectedLanguage=='English'){
+            localStorage.setItem('i18nextLng','eng');
+            i18n.changeLanguage(localStorage.getItem(JSON.stringify('i18nextLng')))
+           
+        }
+        if(selectedLanguage=='Polski'){
+            localStorage.setItem('i18nextLng', 'pl');
+            i18n.changeLanguage(localStorage.getItem(JSON.stringify('i18nextLng')))
+            
+        }
+        
+        
+
+        
+        
+    }
     const accounts = 
     [
         "Megan Thee Stalion",
@@ -25,21 +50,21 @@ function TopNavBar(props){
     return(
         <StyledNavbar expand={false}>
             <Container fluid>
-                <Navbar.Brand className={classes.logo} href="#">{props.lt('dashboardName')}</Navbar.Brand>
+                <Navbar.Brand className={classes.logo} href="#">{t('dashboardName')}</Navbar.Brand>
                 {/* <LanguageController changeLanguage={props.i18n}/> */}
                 <div className={classes.userUtils}>
                     <div className={`rounded-circle ${classes.circle}`}>
-                        <MoonFill size={20} className={classes.moonIcon} onClick={props.toggleTheme} style={{ color: '#000' }}  />
+                        <MoonFill size={20} className={classes.moonIcon} onClick={props.toggleTheme}  />
                     </div>
-                    <Dropdown className={classes.changeLanguage} align="start" onSelect={(e)=>setSelectedLanguage(e)}>
-                        <Dropdown.Toggle className={classes.utilDropdown} id="dropdown-basic"
+                    <Dropdown className={classes.changeLanguage} align="start" onSelect={setAppLanguage}>
+                        <Dropdown.Toggle  className={classes.utilDropdown} id="dropdown-basic"
                         >
                         {selectedLanguage}
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu>
                             {languages.map(l => 
-                                <Dropdown.Item  eventKey={l} >{l}</Dropdown.Item>
+                                <Dropdown.Item eventKey={l} >{l}</Dropdown.Item>
                                 )}
                             {/* <Dropdown.Item  href="#/action-1">English</Dropdown.Item>
                             <Dropdown.Item  href="#/action-2">Polski</Dropdown.Item> */}
@@ -54,16 +79,16 @@ function TopNavBar(props){
                     >
 
                         <Offcanvas.Header closeButton>
-                            <Offcanvas.Title id="offcanvasNavbarLabel">{props.lt('settings')}</Offcanvas.Title>
+                            <Offcanvas.Title id="offcanvasNavbarLabel">{t('settings')}</Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
 
-                                <Nav.Link href="#action1">{props.lt('accountDetails')}</Nav.Link>
+                                <Nav.Link href="#action1">{t('accountDetails')}</Nav.Link>
 
 
 
-                                <NavDropdown title={props.lt('switchAccount')} id="offcanvasNavbarDropdown">
+                                <NavDropdown title={t('switchAccount')} id="offcanvasNavbarDropdown">
                                     { accounts.map((item) => {
                                         return <NavDropdown.Item className={"p-2"} href="#account">{item}</NavDropdown.Item>
                                     })}
@@ -74,13 +99,13 @@ function TopNavBar(props){
                                     <NavDropdown.Item href="#action5">
                                         <div className={classes.addAccountStyle}>
                                             <PlusCircle />
-                                            <div className={"p-2"}>{props.lt('addAccount')}</div>
+                                            <div className={"p-2"}>{t('addAccount')}</div>
                                         </div>
                                     </NavDropdown.Item>
 
                                 </NavDropdown>
 
-                                <Nav.Link href="#LogOut" style={{color:"red"}}>{props.lt('logout')}</Nav.Link>
+                                <Nav.Link href="#LogOut" style={{color:"red"}}>{t('logout')}</Nav.Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
