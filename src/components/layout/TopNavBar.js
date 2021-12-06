@@ -6,9 +6,8 @@ import { PlusCircle, BoxArrowUpRight, MoonFill } from "react-bootstrap-icons";
 import classes from './TopNavBar.module.css'
 import { changeLanguage } from "i18next";
 import LanguageController from "../LanguageController";
-import {StyledNavbar, StyledTopNavBar} from "./TopNavBar.styled";
-import {darkTheme, lightTheme} from "../../theme";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import {StyledNavbar} from "./TopNavBar.styled";
+
 
 
 function TopNavBar(props){
@@ -39,7 +38,7 @@ function TopNavBar(props){
                             <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                    <Navbar.Toggle aria-controls="offcanvasNavbar" />
+                    <Navbar.Toggle className={classes.toggle} aria-controls="offcanvasNavbar" />
                     <Navbar.Offcanvas
                         id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel"
