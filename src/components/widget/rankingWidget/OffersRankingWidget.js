@@ -1,4 +1,4 @@
-import widgetClasses from "../layout/widget/Widget.module.css";
+import widgetClasses from "../../layout/widget/Widget.module.css";
 import { Card } from "react-bootstrap";
 import ListedItem from "./ListedItem";
 import classes from './OffersRankingWidget.module.css'
