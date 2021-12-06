@@ -10,6 +10,6 @@ export const lightTheme = {
 export const darkTheme = {
     backgroundColor: '#363537',
     color: '#FAFAFA',
-    backgroundColorNavbar: '#FFFFFF',
+    backgroundColorNavbar: '#495057',
     toggleColor: '#FFFFFF',
 }

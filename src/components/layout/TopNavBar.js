@@ -21,7 +21,7 @@ function TopNavBar(props){
     return(
         <StyledNavbar expand={false}>
             <Container fluid>
-                <Navbar.Brand href="#">{props.lt('dashboardName')}</Navbar.Brand>
+                <Navbar.Brand className={classes.logo} href="#">{props.lt('dashboardName')}</Navbar.Brand>
                 {/* <LanguageController changeLanguage={props.i18n}/> */}
                 <div className={classes.userUtils}>
                     <div className={`rounded-circle ${classes.circle}`}>

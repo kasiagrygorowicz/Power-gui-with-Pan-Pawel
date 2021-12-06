@@ -5,25 +5,28 @@
     align-items: center;
 }
 
-.moonIcon {
-
-}
-
 .toggle {
     background-color: #ffffff;
+}
+
+.logo {
+    color: #F5F0F0 !important;
+    line-height: 28px;
+    letter-spacing: 0.1em;
 }
 
 .circle {
     height: 100%;
     width: 100%;
     background: #ffffff;
-    padding: 5px;
+    padding: 5px 7px;
     margin-right: 10px;
     margin-top: 2px;
     border-radius: 50%;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .util, .utilDropdown {
