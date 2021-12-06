@@ -1,9 +1,9 @@
 import { Card } from "react-bootstrap";
 import OrderType from "./OrderType";
-import widgetClasses from "../layout/widget/Widget.module.css";
+import widgetClasses from "../../layout/widget/Widget.module.css";
 import classes from './OrdersWidget.module.css'
 import OrdersSummary from "./OrdersSummary";
-import Widget from "../layout/widget/Widget";
+import Widget from "../../layout/widget/Widget";
 
 function OrdersWidget(props) {
   return (

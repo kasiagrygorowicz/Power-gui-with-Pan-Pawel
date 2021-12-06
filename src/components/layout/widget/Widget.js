@@ -1,6 +1,6 @@
 import { WidgetStyled } from "./Widget.styled";
 
-function Widget(props){
+function Widget(props) {
     return(
         <WidgetStyled>
             {props.children}
