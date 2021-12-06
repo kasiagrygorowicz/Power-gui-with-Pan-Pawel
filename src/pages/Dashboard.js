@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import DailyTipsWidget from "../components/dailyTipsWidget/DailyTipsWidget";
 import SalesQualityWidget from '../components/salesQualityWidget/SalesQualityWidget'
 
+import Footer from '../components/Footer'
 
 function Dashboard(props) {
   const { t,i18n } = useTranslation();
@@ -15,7 +16,8 @@ function Dashboard(props) {
  <OrdersWidget />
  <OffersRankingWidget/>
  <DailyTipsWidget/>
- <SalesQualityWidget/>
+ {/* <SalesQualityWidget/> */}
+ <Footer/>
  
 
 
