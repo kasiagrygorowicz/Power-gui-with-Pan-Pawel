@@ -5,7 +5,7 @@ import Offcanvas from "react-bootstrap/Offcanvas"
 import { PlusCircle, BoxArrowUpRight, MoonFill } from "react-bootstrap-icons";
 import classes from './TopNavBar.module.css'
 import { changeLanguage } from "i18next";
-import LanguageController from "../LanguageController";
+import LanguageController from "../../LanguageController";
 import {StyledNavbar} from "./TopNavBar.styled";
 
 

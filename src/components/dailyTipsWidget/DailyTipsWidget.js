@@ -1,6 +1,6 @@
 import Tip from './Tip'
 import { Card } from "react-bootstrap";
-import widgetClasses from "../Widget.module.css";
+import widgetClasses from "../layout/widget/Widget.module.css";
 import classes from "./DailyTipsWidget.module.css"
 
 function DailyTipsWidget(){

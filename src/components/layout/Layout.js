@@ -1,4 +1,4 @@
-import TopNavBar from "./TopNavBar";
+import TopNavBar from "./navbar/TopNavBar";
 import {useTranslation} from "react-i18next";
 
 function Layout(props) {

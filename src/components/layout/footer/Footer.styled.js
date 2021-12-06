@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {Navbar} from "react-bootstrap";
 
 export const FooterStyled = styled(Navbar) `
-  background-color: ${({ theme }) => theme.backgroundColorNavbar};
+  background-color: ${({ theme }) => theme.navbar.backgroundColor};
   width:100%;
   height: 43px;
   text-align: center;

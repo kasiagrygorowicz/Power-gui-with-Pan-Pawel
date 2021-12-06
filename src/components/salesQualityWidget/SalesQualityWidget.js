@@ -1,6 +1,6 @@
 import AnnualScore from './AnnualScore'
 import classes from './SalesQualityWidget.module.css'
-import widgetClasses from "../Widget.module.css";
+import widgetClasses from "../layout/widget/Widget.module.css";
 import { Card } from "react-bootstrap";
 import Improvement from './Improvement';
 

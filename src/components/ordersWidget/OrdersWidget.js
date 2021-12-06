@@ -1,13 +1,14 @@
 import { Card } from "react-bootstrap";
 import OrderType from "./OrderType";
-import widgetClasses from "../Widget.module.css";
+import widgetClasses from "../layout/widget/Widget.module.css";
 import classes from './OrdersWidget.module.css'
 import OrdersSummary from "./OrdersSummary";
+import Widget from "../layout/widget/Widget";
 
 function OrdersWidget(props) {
   return (
     
-      <Card className={widgetClasses.basicShape}>
+      <Widget className={widgetClasses.basicShape}>
         <Card.Body>
           <Card.Title className={widgetClasses.titleStyle}>Orders</Card.Title>
           <div className={classes.mainStructure}>
@@ -21,7 +22,7 @@ function OrdersWidget(props) {
             </div>
           </div>
         </Card.Body>
-      </Card>
+      </Widget>
 
       
     

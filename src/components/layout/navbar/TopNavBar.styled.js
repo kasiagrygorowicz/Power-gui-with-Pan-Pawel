@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Navbar, NavbarBrand } from "react-bootstrap";
 
 export const StyledNavbar = styled(Navbar)`
-      background-color: ${({ theme }) => theme.backgroundColorNavbar};
+      background-color: ${({ theme }) => theme.navbar.backgroundColor};
       color: ${({ theme }) => theme.color};
   
       Toggle {
