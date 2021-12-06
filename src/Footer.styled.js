@@ -14,4 +14,6 @@ export const FooterStyled = styled(Navbar) `
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  position: absolute;
+  bottom: 0;
 `
