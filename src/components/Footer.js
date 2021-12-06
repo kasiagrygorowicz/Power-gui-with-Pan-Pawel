@@ -3,7 +3,7 @@ import {FooterStyled} from "../Footer.styled";
 
 function Footer(){
 return(
-    <FooterStyled>
+    <FooterStyled fixed="bottom">
         Dashboard made by WUT students. All rights reserved.
     </FooterStyled>
 )
