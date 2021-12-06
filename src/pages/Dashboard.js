@@ -6,6 +6,7 @@ import DailyTipsWidget from "../components/dailyTipsWidget/DailyTipsWidget";
 import SalesQualityWidget from '../components/salesQualityWidget/SalesQualityWidget'
 
 import Footer from '../components/Footer'
+import {FooterStyled} from "../Footer.styled";
 
 function Dashboard(props) {
   const { t,i18n } = useTranslation();

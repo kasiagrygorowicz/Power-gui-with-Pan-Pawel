@@ -27,7 +27,7 @@ function TopNavBar(props){
                     <div className={`rounded-circle ${classes.circle}`}>
                         <MoonFill size={20} className={classes.moonIcon} onClick={props.toggleTheme}  />
                     </div>
-                    <Dropdown align="start">
+                    <Dropdown className={classes.changeLanguage} align="start">
                         <Dropdown.Toggle className={classes.utilDropdown} id="dropdown-basic">
                             Language
                         </Dropdown.Toggle>

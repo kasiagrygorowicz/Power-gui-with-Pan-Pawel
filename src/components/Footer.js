@@ -1,10 +1,11 @@
 import classes from './Footer.module.css'
+import {FooterStyled} from "../Footer.styled";
 
 function Footer(){
 return(
-    <div className={classes.mainStructure}>
-
-    </div>
+    <FooterStyled>
+        Dashboard made by WUT students. All rights reserved.
+    </FooterStyled>
 )
 }
 

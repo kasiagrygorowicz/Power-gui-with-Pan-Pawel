@@ -9,6 +9,10 @@
     background-color: #ffffff;
 }
 
+.changeLanguage {
+    margin-top: 1px;
+}
+
 .logo {
     color: #F5F0F0 !important;
     line-height: 28px;
