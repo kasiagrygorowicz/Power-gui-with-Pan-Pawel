@@ -1,0 +1,26 @@
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stars {
+    margin-left: -3px;
+}
+
+.date {
+    color: #95938B;
+    font-style: italic;
+    margin-top: 2px;
+}
+
+.stars > * {
+    margin-left: 2px;
+    color: #F0E04D;
+}
+
+.date {
+    color: #95938B;
+    font-style: italic;
+    margin-top: 2px;
+}

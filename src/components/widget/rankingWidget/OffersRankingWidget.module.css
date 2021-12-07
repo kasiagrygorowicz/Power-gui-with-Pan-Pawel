@@ -5,3 +5,44 @@
     position: relative;
     top: 5%;
 }
+
+.dropDown {
+    border-radius: 30px;
+    width: 140px;
+    height: 40px;
+    margin: 20px 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: right;
+}
+
+.description {
+
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stars {
+    margin-left: -3px;
+}
+
+.stars > * {
+    margin-left: 2px;
+    color: #F0E04D;
+}
+
+.date {
+    color: #95938B;
+    font-style: italic;
+    margin-top: 2px;
+}
+
+.cardTitle {
+    color: #0D6EFD;
+}
