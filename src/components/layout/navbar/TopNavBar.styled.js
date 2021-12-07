@@ -44,4 +44,9 @@ export const StyledNavbar = styled(Navbar)`
         background-color: ${({ theme }) => theme.toggleColor};
         color: ${({ theme }) => theme.toggleColor};
       }
+    
+      .language-menu {
+          background-color: ${({ theme }) => theme.languageColor };
+          color: ${({ theme }) => theme.color };
+      }
     `;

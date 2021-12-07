@@ -18,6 +18,7 @@ export const lightTheme = {
     },
 
     inputColor: '#fff',
+    languageColor: '#FFF',
 }
 
 export const darkTheme = {
@@ -37,4 +38,5 @@ export const darkTheme = {
     },
 
     inputColor: '#5c5c5c',
+    languageColor: '#343A40',
 }

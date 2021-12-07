@@ -57,8 +57,7 @@ function TopNavBar(props){
                         {icon}
                     </div>
                     <Dropdown className={classes.changeLanguage} align="start" onSelect={setAppLanguage}>
-                        <Dropdown.Toggle  className={classes.utilDropdown} id="dropdown-basic"
-                        >
+                        <Dropdown.Toggle  className={classes.utilDropdown} className={'language-menu'} id="dropdown-basic">
                         {selectedLanguage}
                         </Dropdown.Toggle>
 
@@ -71,7 +70,7 @@ function TopNavBar(props){
                             
                         </Dropdown.Menu>
                     </Dropdown>
-                    <Navbar.Toggle className={classes.toggle} aria-controls="offcanvasNavbar" />
+                    <Navbar.Toggle id={'menu-button'} className={classes.toggle} aria-controls="offcanvasNavbar"/>
                     <Navbar.Offcanvas
                         id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel"
