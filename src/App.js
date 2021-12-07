@@ -33,7 +33,7 @@ function App() {
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         
           <GlobalStyles />
-            <Layout toggleTheme={toggleTheme}>
+            <Layout toggleTheme={toggleTheme} theme={theme}>
               <Routes>
                 <Route path="/" exact element={<MainPage />} />
                 <Route path="/login" element={<LoginPage value={t} changeLanguage={changeLanguageHandler} />} />

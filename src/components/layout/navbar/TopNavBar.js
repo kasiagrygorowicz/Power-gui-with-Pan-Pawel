@@ -2,12 +2,13 @@ import { Component, useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import {Container, Nav, Navbar, NavDropdown, Form, FormControl, Footer, Row, Col, Dropdown} from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas"
-import { PlusCircle, BoxArrowUpRight, MoonFill } from "react-bootstrap-icons";
+import {PlusCircle, BoxArrowUpRight, MoonFill, SunFill, Sun} from "react-bootstrap-icons";
 import classes from './TopNavBar.module.css'
 import { changeLanguage } from "i18next";
 import LanguageController from "../../LanguageController";
 import {StyledNavbar} from "./TopNavBar.styled";
 import { useTranslation } from "react-i18next";
+import {darkTheme, lightTheme} from "../../../theme";
 
 
 
@@ -34,11 +35,6 @@ function TopNavBar(props){
             
         }
         setSelectedLanguage(e);
-        
-        
-
-        
-        
     }
     const accounts = 
     [
@@ -47,6 +43,10 @@ function TopNavBar(props){
         "Harry Potter"
     ]
 
+    let moon =  <MoonFill size={20} className={classes.moonIcon} onClick={props.toggleTheme}/>;
+    let sun =   <SunFill size={20} className={classes.sunIcon} onClick={props.toggleTheme}/>;
+    const icon = props.theme === "light" ? moon : sun;
+
     return(
         <StyledNavbar className={classes.navbar} expand={false}>
             <Container fluid>
@@ -54,7 +54,7 @@ function TopNavBar(props){
                 {/* <LanguageController changeLanguage={props.i18n}/> */}
                 <div className={classes.userUtils}>
                     <div className={`rounded-circle ${classes.circle}`}>
-                        <MoonFill size={20} className={classes.moonIcon} onClick={props.toggleTheme}  />
+                        {icon}
                     </div>
                     <Dropdown className={classes.changeLanguage} align="start" onSelect={setAppLanguage}>
                         <Dropdown.Toggle  className={classes.utilDropdown} id="dropdown-basic"

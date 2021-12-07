@@ -9,6 +9,7 @@ export const lightTheme = {
 
     navbar: {
         backgroundColor: '#3D8BFD',
+        utilColor: '#FFFFFF'
     },
 
     widget: {
@@ -26,12 +27,13 @@ export const darkTheme = {
     toggleColor: '#FFFFFF',
 
     navbar: {
-        backgroundColor: '#495057'
+        backgroundColor: '#495057',
+        utilColor: '#343A40'
     },
 
     widget: {
         backgroundColor: '#495057',
-        color: '#FFFFFF'
+        utilColor: '#FFFFFF'
     },
 
     inputColor: '#5c5c5c',
