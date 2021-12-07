@@ -7,7 +7,6 @@ export const GlobalStyles = createGlobalStyle`
   html {
     position: relative;
     min-height: 100%;
-  
   }
   
   body {

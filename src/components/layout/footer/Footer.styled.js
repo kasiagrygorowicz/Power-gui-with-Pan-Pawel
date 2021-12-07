@@ -3,7 +3,7 @@ import {Navbar} from "react-bootstrap";
 
 export const FooterStyled = styled(Navbar) `
   background-color: ${({ theme }) => theme.navbar.backgroundColor};
-  width:100%;
+  width:101%;
   height: 43px;
   text-align: center;
   color: #F5F0F0 !important;
@@ -13,8 +13,7 @@ export const FooterStyled = styled(Navbar) `
   display: flex;
   justify-content: center;
   align-content: center;
-  flex-direction: column;
   position: absolute;
-  bottom: -40px;
-  left:0;
+  bottom: -300px;
+  left: -19px;
 `
