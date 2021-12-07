@@ -7,9 +7,9 @@ export const WidgetStyled = styled(Card) `
     height: 256px;
     border-radius: 40px;
     border-width: 3px;
-    border-color: ${({ theme }) => theme.widget.color};
+    border-color: ${({ theme }) => theme.widget.borderedColor};
     
-    & .Title {
-      color: ${({ theme }) => theme.widget.color};
+    .Title {
+      color: ${({ theme }) => theme.widget.border};
     }
 `
