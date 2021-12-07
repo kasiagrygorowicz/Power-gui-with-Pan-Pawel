@@ -8,8 +8,4 @@ export const ClientsOpinionsStyled = styled(Card) `
     border-radius: 40px;
     border-width: 3px;
     border-color: ${({ theme }) => theme.widget.borderedColor};
-
-    .container > *:first-child {
-      color: ${({ theme }) => theme.widget.title};
-    }
 `

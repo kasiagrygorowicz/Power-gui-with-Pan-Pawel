@@ -12,11 +12,7 @@ export const StyledSalesChartWitget = styled(Container) `
 `
 
 
-  export const chartOptions = styled(Flex)`
-      
-      .div{
-      color:red;
-      }`
+
 
 
 

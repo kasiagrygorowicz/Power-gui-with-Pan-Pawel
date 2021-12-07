@@ -6,4 +6,5 @@ export const StyledOrdersWitget = styled(Container) `
     color: ${({ theme }) => theme.color };
     height: 256px;
   }
+  
 `
