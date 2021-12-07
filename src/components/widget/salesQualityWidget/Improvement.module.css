@@ -8,10 +8,10 @@
 
 .minorStructure {
   display: flex;
-  column-gap: 20%;
-
+  column-gap: 5%;
+justify-content: center;
   position: relative;
-  left: 6%;
+  /*left: 6%;*/
 }
 
 .questionLabel {

@@ -11,10 +11,24 @@
   "addAccount":"Dodaj konto",
   "logout":"Wyloguj",
 
+  "ordersW": "Zamówienia",
+  "dailyTips": "Codzienne porady",
+
   "orders" :{
     "notsend":"Niewysłane",
     "notpaid":"Nieopłacone",
     "returns":"Zwroty",
     "msg":"Oczekujące zamówienia"
+  },
+
+  "salesQualityW" : "Jakość sprzedaży",
+  "salesQuality": {
+    "msg" : "Twój roczny wynik jakosci sprzedaży",
+    "q" : "Co musisz poprawić",
+    "aspects": {
+      "1": "uprzejmość",
+      "2": "zarzadzanie czasem",
+      "3": "skrupulatność"
+    }
   }
 }
