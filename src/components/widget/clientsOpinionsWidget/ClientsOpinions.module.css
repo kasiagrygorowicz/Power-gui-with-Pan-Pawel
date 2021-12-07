@@ -10,11 +10,11 @@
     justify-content: right;
 }
 
-.opinion {
-    margin-top: 5px;
+.description {
+
 }
 
-.description {
+.opinion {
 
 }
 
@@ -22,6 +22,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.stars {
+    margin-left: -3px;
 }
 
 .stars > * {

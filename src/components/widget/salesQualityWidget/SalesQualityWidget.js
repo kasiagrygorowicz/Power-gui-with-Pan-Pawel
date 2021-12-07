@@ -5,6 +5,7 @@ import {Card, Col} from "react-bootstrap";
 import Improvement from './Improvement';
 import { StyledSalesQualityWitget } from "./StyledSalesQualityWidget.styled";
 import {useTranslation} from "react-i18next";
+import Widget from "../../layout/widget/Widget";
 
 function SalesQualityWidget(){
     const t = useTranslation()[0]
@@ -18,7 +19,7 @@ function SalesQualityWidget(){
     ]
 return(
   <StyledSalesQualityWitget>
-    <Card className={widgetClasses.basicShape}>
+      <Widget className={"widgetClasses.basicShape"}>
     <Card.Body>
       <Card.Title className={widgetClasses.titleStyle}>{t("salesQualityW")}</Card.Title>
       <div className={classes.mainStructure}>
@@ -26,7 +27,7 @@ return(
       <Improvement t={t}aspect1={aspects[0]} aspect2={aspects[1]} aspect3={aspects[2]}/>
       </div>
     </Card.Body>
-  </Card>
+      </Widget>
   </StyledSalesQualityWitget>
 )
 }

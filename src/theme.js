@@ -12,7 +12,8 @@ export const lightTheme = {
     },
 
     widget: {
-        backgroundColor: '#FFFFFF'
+        backgroundColor: '#FFFFFF',
+        color: '#0D6EFD'
     },
 
     inputColor: '#fff',
@@ -29,7 +30,8 @@ export const darkTheme = {
     },
 
     widget: {
-        backgroundColor: '#495057'
+        backgroundColor: '#495057',
+        color: '#FFFFFF'
     },
 
     inputColor: '#5c5c5c',
