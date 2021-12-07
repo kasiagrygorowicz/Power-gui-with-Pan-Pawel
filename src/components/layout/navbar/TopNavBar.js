@@ -57,7 +57,7 @@ function TopNavBar(props){
                         {icon}
                     </div>
                     <Dropdown className={classes.changeLanguage} align="start" onSelect={setAppLanguage}>
-                        <Dropdown.Toggle  className={classes.utilDropdown} className={'language-menu'} id="dropdown-basic">
+                        <Dropdown.Toggle className={`language-menu ${classes.utilDropdown}`} id="dropdown-basic">
                         {selectedLanguage}
                         </Dropdown.Toggle>
 

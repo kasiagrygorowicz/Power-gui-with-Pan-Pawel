@@ -14,7 +14,8 @@ export const lightTheme = {
 
     widget: {
         backgroundColor: '#FFFFFF',
-        borderedColor: '#0D6EFD'
+        borderedColor: '#0D6EFD',
+        title: '#0D6EFD'
     },
 
     inputColor: '#fff',
@@ -29,12 +30,14 @@ export const darkTheme = {
 
     navbar: {
         backgroundColor: '#495057',
-        utilColor: '#343A40'
+        utilColor: '#343A40',
+        borderColor: '#343A40'
     },
 
     widget: {
         backgroundColor: '#495057',
-        utilColor: '#FFFFFF'
+        utilColor: '#FFFFFF',
+        title: '#FFFFFF'
     },
 
     inputColor: '#5c5c5c',
