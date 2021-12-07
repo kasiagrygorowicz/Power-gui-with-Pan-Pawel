@@ -21,6 +21,7 @@ import ClientsOpinionsWidget from "../components/widget/clientsOpinionsWidget/Cl
 
 function Dashboard(props) {
   const { t, i18n } = useTranslation();
+  const data=[10,20,30]
 
   return (
     <div>
@@ -28,7 +29,7 @@ function Dashboard(props) {
         <Container className={classes.mainStructure}>
           <Row>
             <Col>
-              <OrdersWidget />
+              <OrdersWidget quantity={data}/>
             </Col>
             <Col>
               <DailyTipsWidget />

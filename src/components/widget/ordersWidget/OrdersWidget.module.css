@@ -1,8 +1,6 @@
 .mainStructure{
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    width:100%;
     position: relative;
     top:10%;
     left: 5%;
@@ -17,9 +15,7 @@
 }
 
 .ordersSummaryPosition{
-position: relative; 
-left: 6%;
-
-
+position: relative;
+margin-left:5%;
 
 }

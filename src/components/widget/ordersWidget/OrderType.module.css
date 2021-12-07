@@ -1,17 +1,19 @@
 .contentStyle {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 160px;
+  /*align-items: center;*/
+  width: 180px;
   margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .item {
-  width: 30%;
+  width: 5%;
+
 }
 
 .name {
-  width: 70%;
+  width: 95%;
 }
 
 .textStyle {

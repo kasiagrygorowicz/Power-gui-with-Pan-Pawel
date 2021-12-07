@@ -19,9 +19,9 @@ function OrdersWidget(props) {
             <Card.Title className={widgetClasses.titleStyle}>Orders</Card.Title>
             <div className={classes.mainStructure}>
               <div className={classes.ordersPosition}>
-                <OrderType orderType={t("orders.notpaid")} quantity={20} />
-                <OrderType orderType={t("orders.notsend")} quantity={10} />
-                <OrderType orderType={t("orders.returns")} quantity={0} />
+                <OrderType orderType={t("orders.notpaid")} quantity={props.quantity[0]} />
+                <OrderType orderType={t("orders.notsend")} quantity={props.quantity[1]} />
+                <OrderType orderType={t("orders.returns")} quantity={props.quantity[2]} />
               </div>
               <div className={classes.ordersSummaryPosition}>
                 <OrdersSummary msg={t("orders.msg")}allOrders={30}/>
