@@ -18,7 +18,6 @@ function SalesQualityWidget(){
     ]
 return(
   <StyledSalesQualityWitget>
-    <Card className={widgetClasses.basicShape}>
     <Card.Body>
       <Card.Title className={widgetClasses.titleStyle}>{t("salesQualityW")}</Card.Title>
       <div className={classes.mainStructure}>
@@ -26,7 +25,6 @@ return(
       <Improvement t={t}aspect1={aspects[0]} aspect2={aspects[1]} aspect3={aspects[2]}/>
       </div>
     </Card.Body>
-  </Card>
   </StyledSalesQualityWitget>
 )
 }
