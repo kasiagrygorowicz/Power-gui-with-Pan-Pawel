@@ -46,7 +46,7 @@ function Dashboard(props) {
 
 
                 </Container>
-                <Footer/>
+
             </StyledDashboard>
 
         </div>
