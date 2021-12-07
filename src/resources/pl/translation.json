@@ -12,6 +12,7 @@
   "salesQualityW" : "Jakość sprzedaży",
   "clientsOpinionsW": "Opinie klientów",
   "salesChartW": "Wykres Sprzedaży",
+  "offersRankingW": "Ranking ofert",
 
 
   "orders" :{
@@ -46,7 +47,10 @@
     "signup-redirect":"Załóż konto!",
     "enterEmail": "Wpisz email",
     "error": "Nieprawidłowy email lub hasło"
+  },
+
+  "offersRanking": {
+    "mfb": "Najczęściej kupowane",
+    "lfb": "Najrzadziej kupowane"
   }
-
-
 }

@@ -11,7 +11,7 @@
   "salesQualityW": "Sales quality",
   "clientsOpinionsW": "Clients Opinions",
   "salesChartW": "Sales Chart",
-
+  "offersRankingW": "Offers' ranking",
 
   "orders": {
     "notsend": "Not send",
@@ -42,5 +42,10 @@
     "signup-redirect": "Sign Up here!",
     "enterEmail": "Enter email",
     "error": "Incorrect email or password"
+  },
+
+  "offersRanking": {
+    "mfb": "Most frequently bought",
+    "lfb": "Least frequently bought"
   }
 }
