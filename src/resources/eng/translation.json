@@ -9,5 +9,15 @@
   "accountDetails":"Account Details",
   "switchAccount":"Switch Account",
   "addAccount":"Add Account",
-  "logout":"Log out"
+  "logout":"Log out",
+
+  "orders" :{
+    "notsend":"Not send",
+    "notpaid":"Not paid",
+    "returns":"Returns",
+    "msg":"All pending orders"
+  }
+
+
+
 }

@@ -13,6 +13,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import classes from "./Dashboard.module.css";
 import SalesQualityWidget from "../components/widget/salesQualityWidget/SalesQualityWidget";
 import OrdersWidget from "../components/widget/ordersWidget/OrdersWidget";
+import ClientsOpinionsWidget from "../components/widget/clientsOpinionsWidget/ClientsOpinionsWidget";
+
+
+
+
 
 function Dashboard(props) {
   const { t, i18n } = useTranslation();
@@ -41,6 +46,7 @@ function Dashboard(props) {
             </Row>
           </Col>
           {/* <OffersRankingWidget/> */}
+          <ClientsOpinionsWidget/>
         </Container>
       </StyledDashboard>
       <Footer />

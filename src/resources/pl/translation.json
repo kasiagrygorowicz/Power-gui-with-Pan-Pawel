@@ -9,5 +9,12 @@
   "accountDetails":"Szczegóły konta",
   "switchAccount":"Zmień konto",
   "addAccount":"Dodaj konto",
-  "logout":"Wyloguj"
+  "logout":"Wyloguj",
+
+  "orders" :{
+    "notsend":"Niewysłane",
+    "notpaid":"Nieopłacone",
+    "returns":"Zwroty",
+    "msg":"Oczekujące zamówienia"
+  }
 }
