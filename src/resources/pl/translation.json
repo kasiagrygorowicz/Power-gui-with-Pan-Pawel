@@ -11,6 +11,9 @@
   "addAccount":"Dodaj konto",
   "logout":"Wyloguj",
 
+  "ordersW": "Zamówienia",
+  "dailyTips": "Codzienne porady",
+
   "orders" :{
     "notsend":"Niewysłane",
     "notpaid":"Nieopłacone",

@@ -16,7 +16,7 @@ function OrdersWidget(props) {
       <StyledOrdersWitget>
         <Widget className={"widgetClasses.basicShape"}>
           <Card.Body>
-            <Card.Title className={widgetClasses.titleStyle}>Orders</Card.Title>
+            <Card.Title className={widgetClasses.titleStyle}>{t("ordersW")}</Card.Title>
             <div className={classes.mainStructure}>
               <div className={classes.ordersPosition}>
                 <OrderType orderType={t("orders.notpaid")} quantity={props.quantity[0]} />
