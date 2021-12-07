@@ -15,7 +15,7 @@ function TopNavBar(props){
     const languages = ['English','Polski']
     const { t, i18n } = useTranslation();
     const [selectedLanguage, setSelectedLanguage]=useState(()=>{
-        if(localStorage.getItem('i18nextLng')=="pl"){
+        if(localStorage.getItem('i18nextLng')==="pl"){
                 return languages[1]
         }
         return languages[0]
@@ -23,17 +23,17 @@ function TopNavBar(props){
    
 
     function setAppLanguage(e){
-        setSelectedLanguage(e);
-        if(selectedLanguage=='English'){
+        if(e==='English'){
             localStorage.setItem('i18nextLng','eng');
-            i18n.changeLanguage(localStorage.getItem(JSON.stringify('i18nextLng')))
+            i18n.changeLanguage(localStorage.getItem('i18nextLng')).then(r => {return true})
            
         }
-        if(selectedLanguage=='Polski'){
+        if(e==='Polski'){
             localStorage.setItem('i18nextLng', 'pl');
-            i18n.changeLanguage(localStorage.getItem(JSON.stringify('i18nextLng')))
+            i18n.changeLanguage(localStorage.getItem('i18nextLng')).then(r => {return true})
             
         }
+        setSelectedLanguage(e);
         
         
 
@@ -64,7 +64,7 @@ function TopNavBar(props){
 
                         <Dropdown.Menu>
                             {languages.map(l => 
-                                <Dropdown.Item eventKey={l}  active={l===selectedLanguage}>{l}</Dropdown.Item>
+                                <Dropdown.Item eventKey={l} key={l} active={l===selectedLanguage}>{l}</Dropdown.Item>
                                 )}
                             {/* <Dropdown.Item  href="#/action-1">English</Dropdown.Item>
                             <Dropdown.Item  href="#/action-2">Polski</Dropdown.Item> */}
