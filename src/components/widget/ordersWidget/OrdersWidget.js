@@ -3,10 +3,10 @@ import OrderType from "./OrderType";
 
 import classes from './OrdersWidget.module.css'
 import OrdersSummary from "./OrdersSummary";
-import widgetClasses  from '../../layout/widget/Widget.module.css'
+import widgetClasses  from '../widget/Widget.module.css'
 import { StyledOrdersWitget } from './OrdersWidget.styled';
 import { useTranslation } from "react-i18next";
-import Widget from "../../layout/widget/Widget";
+import Widget from "../widget/Widget";
 
 
 

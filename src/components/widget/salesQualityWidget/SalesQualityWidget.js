@@ -1,11 +1,11 @@
 import AnnualScore from './AnnualScore'
 import classes from './SalesQualityWidget.module.css'
-import widgetClasses from "../../layout/widget/Widget.module.css";
+import widgetClasses from "../widget/Widget.module.css";
 import {Card, Col} from "react-bootstrap";
 import Improvement from './Improvement';
 import { StyledSalesQualityWitget } from "./StyledSalesQualityWidget.styled";
 import {useTranslation} from "react-i18next";
-import Widget from "../../layout/widget/Widget";
+import Widget from "../widget/Widget";
 
 function SalesQualityWidget(){
     const t = useTranslation()[0]
