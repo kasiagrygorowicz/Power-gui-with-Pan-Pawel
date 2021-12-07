@@ -7,9 +7,14 @@ export const StyledNavbar = styled(Navbar)`
   
       div:first-child > div > *:first-child {
         color: ${({ theme }) => theme.color};
-        background-color: ${({ theme }) => theme.navbar.circleColor};
+        background-color: ${({ theme }) => theme.navbar.utilColor};
       }
-  
+
+      *[align="start"] {
+        color: ${({ theme }) => theme.color};
+        background-color: ${({ theme }) => theme.navbar.utilColor};
+      }
+      
       Toggle {
         background-color: ${({ theme }) => theme.toggleColor};
         color: ${({ theme }) => theme.toggleColor};

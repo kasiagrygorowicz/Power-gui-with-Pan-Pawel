@@ -15,6 +15,7 @@
 
 .changeLanguage {
     margin-top: 1px;
+
 }
 
 .logo {
@@ -43,6 +44,8 @@
 
 .utilDropdown {
     padding-right: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 .userUtils {
