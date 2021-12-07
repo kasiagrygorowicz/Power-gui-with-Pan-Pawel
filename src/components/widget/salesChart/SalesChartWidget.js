@@ -5,6 +5,8 @@ import imag from './chart.png';
 import Tip from "../dailyTipsWidget/Tip";
 import {useTranslation} from "react-i18next";
 import { Card } from "react-bootstrap";
+import {Bucket} from "react-bootstrap-icons";
+import { Button } from 'react-bootstrap';
 
 
 function SalesChartWidget(){
@@ -19,6 +21,9 @@ return(
             </div>
           <div className={'chart-but'} >
             <span>Select time</span>
+            <Button>Last day</Button><br />
+            <Button>Last week</Button><br />
+            <Button>Last yesr</Button>
           </div>
             </div>
         </Card.Body>
