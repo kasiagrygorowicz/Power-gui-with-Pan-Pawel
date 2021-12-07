@@ -15,15 +15,15 @@ return(
         <Card.Body>
             <Card.Title className={widgetClasses.titleStyle}>{t("salesChartW")}</Card.Title>
             <div className={classes.mainStructure}>
-            <div className={'image'} style={{ width: '250px' }}>
-              <img src={imag} style={{ height: '170px', width: '250px', paddingLeft: '25px', display: 'flex' }} />
-            </div>
-          <div className={'chart-but'} >
-            <div>{t("salesChartWidget.select")}</div>
-            <Button>{t("salesChartWidget.ld")}</Button>
-            <Button>{t("salesChartWidget.lw")}</Button>
-            <Button>{t("salesChartWidget.lm")}</Button>
-          </div>
+                <div className={'image'} style={{ width: '250px' }}>
+                  <img src={imag} style={{ height: '170px', width: '250px', paddingLeft: '25px', display: 'flex' }} />
+                </div>
+              <div className={'chart-but'} >
+                <div className>{t("salesChartWidget.select")}</div>
+                <Button>{t("salesChartWidget.ld")}</Button>
+                <Button>{t("salesChartWidget.lw")}</Button>
+                <Button>{t("salesChartWidget.lm")}</Button>
+              </div>
             </div>
         </Card.Body>
     </Widget>

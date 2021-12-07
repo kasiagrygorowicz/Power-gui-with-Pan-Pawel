@@ -1,11 +1,8 @@
 .mainStructure{
     display:flex;
-
+    margin-top: 5px;
 }
 
-.chart-but{
-
-    display:flex;
-    flex-direction: column;
-    raw-gap: 20px;
+.mainStructure > * > *{
+    margin-top: 5px;
 }

@@ -8,7 +8,6 @@ import { changeLanguage } from "i18next";
 import LanguageController from "../../LanguageController";
 import {StyledNavbar} from "./TopNavBar.styled";
 import { useTranslation } from "react-i18next";
-import {darkTheme, lightTheme} from "../../../theme";
 
 
 

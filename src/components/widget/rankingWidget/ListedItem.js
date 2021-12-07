@@ -6,7 +6,7 @@ function ListedItem({image, title, description}) {
         <div>
             <div className={classes.item}>
                 <div className={classes.image}>
-                    <img src="../../../resources/images/chiken.png"/>
+                    <img src="./chiken.png"/>
                 </div>
 
                 <div className={classes.description}>
