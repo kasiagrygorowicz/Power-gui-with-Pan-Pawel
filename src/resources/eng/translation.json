@@ -21,7 +21,19 @@
     "notpaid":"Not paid",
     "returns":"Returns",
     "msg":"All pending orders"
+  },
+
+  "salesQualityW" : "Sales quality",
+  "salesQuality": {
+    "msg" : "Your annual sales quality score is",
+    "q" : "What you need to improve",
+    "aspects": {
+      "1": "courtesy",
+      "2": "time management",
+      "3": "meticulousness"
+    }
   }
+
 
 
 

@@ -1,19 +1,29 @@
 import AnnualScore from './AnnualScore'
 import classes from './SalesQualityWidget.module.css'
 import widgetClasses from "../../layout/widget/Widget.module.css";
-import { Card } from "react-bootstrap";
+import {Card, Col} from "react-bootstrap";
 import Improvement from './Improvement';
 import { StyledSalesQualityWitget } from "./StyledSalesQualityWidget.styled";
+import {useTranslation} from "react-i18next";
 
 function SalesQualityWidget(){
+    const t = useTranslation()[0]
+    const score = "4/5";
+    const aspects = [
+        t("salesQuality.aspects.1"),
+        t("salesQuality.aspects.2"),
+        t("salesQuality.aspects.3"),
+        t("salesQuality.aspects.4"),
+        t("salesQuality.aspects.5")
+    ]
 return(
   <StyledSalesQualityWitget>
     <Card className={widgetClasses.basicShape}>
     <Card.Body>
-      <Card.Title className={widgetClasses.titleStyle}>Sales Quality</Card.Title>
+      <Card.Title className={widgetClasses.titleStyle}>{t("salesQualityW")}</Card.Title>
       <div className={classes.mainStructure}>
-      <AnnualScore/>
-      <Improvement aspect1={"aspect1"} aspect2={"aspect2"} aspect3={"aspect3"}/>
+      <AnnualScore t={t} score={score}/>
+      <Improvement t={t}aspect1={aspects[0]} aspect2={aspects[1]} aspect3={aspects[2]}/>
       </div>
     </Card.Body>
   </Card>

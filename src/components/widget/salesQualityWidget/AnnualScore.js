@@ -1,13 +1,13 @@
 import classes from "./AnnualScore.module.css";
 import { Star, StarFill } from "react-bootstrap-icons";
 
-function AnnualSalesScore() {
+function AnnualSalesScore({t, score}) {
   return (
     <div className={classes.mainStructure}>
       <div className={classes.labelStyle}>
-        Your annual sales quality score is{" "}
+          {t("salesQuality.msg")}
       </div>
-      <div className={classes.ratingLabel}>4/5</div>
+      <div className={classes.ratingLabel}>{score}</div>
     </div>
   );
 }
