@@ -1,9 +1,5 @@
 {
-  "login-label": "Log in",
-  "email": "Email",
-  "psw": "Password",
-  "new-user-question": "New user?",
-  "signup-redirect": "Sign Up here!",
+
   "dashboardName": "Seller Dashboard",
   "settings": "Settings",
   "accountDetails": "Account Details",
@@ -35,5 +31,15 @@
     "p": "positive",
     "n": "negative",
     "a": "all"
+  },
+
+  "login": {
+    "login-label": "Log in",
+    "email": "Email",
+    "psw": "Password",
+    "new-user-question": "New user?",
+    "signup-redirect": "Sign Up here!",
+    "enterEmail": "Enter email",
+    "error": "Incorrect email or password"
   }
 }

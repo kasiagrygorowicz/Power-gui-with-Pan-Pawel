@@ -1,9 +1,5 @@
 {
-  "login-label": "Zaloguj się",
-  "email" : "Email",
-  "psw" : "Hasło",
-  "new-user-question":"Nowy uzytkownik?",
-  "signup-redirect":"Załóz konto!",
+
   "dashboardName":"Panel sprzedawcy",
   "settings":"Ustawienia",
   "accountDetails":"Szczegóły konta",
@@ -39,6 +35,16 @@
     "p": "pozytywne",
     "n": "negatywne",
     "a": "wszystkie"
+  },
+
+  "login": {
+    "login-label": "Zaloguj się",
+    "email" : "Email",
+    "psw" : "Hasło",
+    "new-user-question":"Nowy użytkownik?",
+    "signup-redirect":"Załóż konto!",
+    "enterEmail": "Wpisz email",
+    "error": "Nieprawidłowy email lub hasło"
   }
 
 

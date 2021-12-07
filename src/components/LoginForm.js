@@ -2,15 +2,12 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useTranslation } from "react-i18next";
 import { Alert, FormGroup, FormLabel } from "react-bootstrap";
-import { StyledLoginForm } from './LoginForm.styled';
+import {StyledLoginForm, ButtonStructure, QuestionLabel} from './LoginForm.styled';
 
 function LoginForm() {
-  const { t, i18n } = useTranslation();
+  const t= useTranslation()[0];
 
-  const changeLanguageHandler = (e) => {
-    const languageValue = e.target.value;
-    i18n.changeLanguage(languageValue);
-  };
+
 
   function showAlert() {
     
@@ -24,35 +21,36 @@ function LoginForm() {
     variant="danger"
     show={true}
   >
-    Incorrect email or password!
+          {t("login.error")}
   </Alert>
       <Form>
         <Form.Group className={"mb-3 col-3"} controlId="formBasicEmail">
-          <Form.Label className={"h4 bold"}>{t("email")}</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Label className={"h4 bold"}>{t("login.email")}</Form.Label>
+          <Form.Control type="email" placeholder={t("login.enterEmail")} />
         </Form.Group>
 
         <Form.Group className="mb-4 col-3" controlId="formBasicPassword">
-          <Form.Label className={"h4 bold"}>{t("psw")} </Form.Label>
-          <Form.Control type="password" placeholder="Password" />
+          <Form.Label className={"h4 bold"}>{t("login.psw")} </Form.Label>
+          <Form.Control type="password" placeholder={t("login.psw")} />
         </Form.Group>
 
-        <Form.Group className={"form-inline col-3"}>
+        {/*<Form.Group className={"form-inline col-3 StyledLoginForm.buttonStructure"}>*/}
+        <ButtonStructure className={"form-inline col-3"}>
           <Button className={"pl-10"} variant="primary" type="submit" onSubmit={showAlert}>
-            {t("login-label")}
+            {t("login.login-label")}
           </Button>
 
-          <FormGroup>
+          <QuestionLabel>
             <FormLabel className={"col-auto"} style={{ fontSize: "12px" }}>
-              {t("new-user-question")}
+              {t("login.new-user-question")}
             </FormLabel>
             <a href="">
               <FormLabel className={"col-auto"} style={{ fontSize: "12px" }}>
-                {t("signup-redirect")}
+                {t("login.signup-redirect")}
               </FormLabel>
             </a>
-          </FormGroup>
-        </Form.Group>
+          </QuestionLabel>
+        </ButtonStructure>
       </Form>
       <br></br>
     </div>
