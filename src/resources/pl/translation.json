@@ -52,5 +52,12 @@
   "offersRanking": {
     "mfb": "Najczęściej kupowane",
     "lfb": "Najrzadziej kupowane"
+  },
+
+  "salesChartWidget": {
+    "select": "Wybierz okres",
+    "ld": "Ostatni dzień",
+    "lw":"Ostatni tydzień",
+    "lm": "Ostatni miesiąc"
   }
 }

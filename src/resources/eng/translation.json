@@ -47,5 +47,12 @@
   "offersRanking": {
     "mfb": "Most frequently bought",
     "lfb": "Least frequently bought"
+  },
+
+  "salesChartWidget": {
+    "select": "Select time",
+    "ld": "Last day",
+    "lw": "Last week",
+    "lm": "Last month"
   }
 }

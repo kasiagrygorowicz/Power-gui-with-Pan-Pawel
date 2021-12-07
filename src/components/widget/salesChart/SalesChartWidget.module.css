@@ -1,0 +1,11 @@
+.mainStructure{
+    display:flex;
+
+}
+
+.chart-but{
+
+    display:flex;
+    flex-direction: column;
+    raw-gap: 20px;
+}
