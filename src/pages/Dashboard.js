@@ -38,10 +38,9 @@ function Dashboard(props) {
 
                         </Col>
 
-                        <Col className={classes.minorStructure}>
-                            <Row><SalesChartWidget/></Row>
-                            <Row><SalesChartWidget/></Row>
-                            <Row><SalesChartWidget/></Row>
+                        <Col >
+
+                            <Row><ClientsOpinionsWidget className={classes.minorStructure}/></Row>
                         </Col>
 
 

@@ -2,12 +2,22 @@
     position:absolute;
     left: 2%;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5%;
+
 }
 
 .minorStructure{
     display:flex;
     flex-direction: column;
-row-gap: 5%;
+    row-gap: 5%;
+    justify-content: space-between;
+}
+
+.smallStucture{
+    display:flex;
+    position:relative;
+    height: 100%;
+    flex-direction: column;
+
 }
