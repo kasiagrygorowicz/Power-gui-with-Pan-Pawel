@@ -61,9 +61,9 @@ function TopNavBar(props){
                         {selectedLanguage}
                         </Dropdown.Toggle>
 
-                        <Dropdown.Menu>
+                        <Dropdown.Menu className='languages'>
                             {languages.map(l => 
-                                <Dropdown.Item eventKey={l} key={l} active={l===selectedLanguage}>{l}</Dropdown.Item>
+                                <Dropdown.Item className='language-item' eventKey={l} key={l} active={l===selectedLanguage}>{l}</Dropdown.Item>
                                 )}
                             {/* <Dropdown.Item  href="#/action-1">English</Dropdown.Item>
                             <Dropdown.Item  href="#/action-2">Polski</Dropdown.Item> */}

@@ -9,45 +9,19 @@ export const StyledNavbar = styled(Navbar)`
         color: ${({ theme }) => theme.color};
         background-color: ${({ theme }) => theme.navbar.utilColor};
       }
-
-      *[align="start"] {
-        color: ${({ theme }) => theme.color};
-        background-color: ${({ theme }) => theme.navbar.utilColor};
-      }
-      
-      Toggle {
-        background-color: ${({ theme }) => theme.toggleColor};
-        color: ${({ theme }) => theme.toggleColor};
-      }
-  
-      .Toggle {
-        background-color: ${({ theme }) => theme.toggleColor};
-        color: ${({ theme }) => theme.toggleColor};
-      }
-
-      Brand {
-        background-color: ${({ theme }) => theme.toggleColor};
-        color: ${({ theme }) => theme.toggleColor};
-      }
-  
-      .Brand {
-        background-color: ${({ theme }) => theme.toggleColor};
-        color: ${({ theme }) => theme.toggleColor};
-      }
-  
-      & .Brand {
-        background-color: ${({ theme }) => theme.toggleColor};
-        color: ${({ theme }) => theme.toggleColor};
-      }
-  
-      & .Toggle {
-        background-color: ${({ theme }) => theme.toggleColor};
-        color: ${({ theme }) => theme.toggleColor};
-      }
     
       .language-menu {
           background-color: ${({ theme }) => theme.languageColor };
           color: ${({ theme }) => theme.color };
           border-color: ${({ theme }) => theme.navbar.borderColor };
+      }
+  
+      .languages {
+        background-color: ${({ theme }) => theme.languageColor };
+        border-color: ${({ theme }) => theme.navbar.borderColor };
+      }
+  
+      .language-item {
+        color: ${({ theme }) => theme.color };
       }
     `;
