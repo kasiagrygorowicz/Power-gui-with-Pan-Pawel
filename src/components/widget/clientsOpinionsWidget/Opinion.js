@@ -13,7 +13,7 @@ function Opinion({description, stars, date}) {
                     <Star/>
                 </div>
                 <div className={classes.date}>
-                    20.11.2021, 21:37
+                    {date}
                 </div>
             </div>
             <div className={classes.description}>
