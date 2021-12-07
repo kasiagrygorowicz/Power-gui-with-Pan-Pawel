@@ -1,6 +1,6 @@
 # Uruchomienie
 
-## GitHub repozytorium: https://github.com/kasiagrygorowicz/Power-gui-with-Pan-Pawel.git
+## GitHub repozytorium: https://github.com/kasiagrygorowicz/panel-sprzedawcy.git
 
 1. Należy pobrać zawartość repozytorium z GitHub
 2. Następnie należy przejść do katalogu z kodem źródłowym
