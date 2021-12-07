@@ -77,7 +77,7 @@ function TopNavBar(props){
                     >
 
                         <Offcanvas.Header closeButton>
-                            <Offcanvas.Title id="offcanvasNavbarLabel">{t('settings')}</Offcanvas.Title>
+                            <Offcanvas.Title className='language-item' id="offcanvasNavbarLabel">{t('settings')}</Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">

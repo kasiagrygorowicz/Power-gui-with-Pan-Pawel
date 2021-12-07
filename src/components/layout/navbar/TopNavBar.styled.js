@@ -24,4 +24,8 @@ export const StyledNavbar = styled(Navbar)`
       .language-item {
         color: ${({ theme }) => theme.color };
       }
+
+      .Offcanvas.Header {
+        color: ${({ theme }) => theme.color};
+      }
     `;
