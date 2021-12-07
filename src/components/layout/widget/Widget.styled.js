@@ -4,7 +4,12 @@ import {Card} from "react-bootstrap";
 export const WidgetStyled = styled(Card) `
     background-color: ${({ theme }) => theme.widget.backgroundColor};
     width: 420px;
-    height: 220px;
+    height: 256px;
     border-radius: 40px;
     border-width: 3px;
+    border-color: ${({ theme }) => theme.widget.color};
+    
+    & .Title {
+      color: ${({ theme }) => theme.widget.color};
+    }
 `

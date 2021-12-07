@@ -4,6 +4,5 @@ import { Container } from "react-bootstrap";
 export const StyledDailyTipsWitget = styled(Container) `
   .card {
     color: ${({ theme }) => theme.color };
-    background-color: ${({ theme }) => theme.inputColor };
   }
 `
