@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Widget from "../widget/Widget";
-import {Card} from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 export const ClientsOpinionsStyled = styled(Card) `
     background-color: ${({ theme }) => theme.widget.backgroundColor};
