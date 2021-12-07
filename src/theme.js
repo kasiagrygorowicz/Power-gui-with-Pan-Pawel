@@ -37,6 +37,7 @@ export const darkTheme = {
 
     widget: {
         backgroundColor: '#495057',
+        borderedColor: '#FFFFFF',
         utilColor: '#FFFFFF',
         title: '#FFFFFF'
     },
