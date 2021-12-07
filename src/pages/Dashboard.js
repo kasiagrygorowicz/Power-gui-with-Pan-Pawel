@@ -15,6 +15,7 @@ import SalesQualityWidget from "../components/widget/salesQualityWidget/SalesQua
 import OrdersWidget from "../components/widget/ordersWidget/OrdersWidget";
 import ClientsOpinionsWidget from "../components/widget/clientsOpinionsWidget/ClientsOpinionsWidget";
 import SalesChartWidget from "../components/widget/salesChart/SalesChartWidget";
+import OffersRankingWidget from "../components/widget/rankingWidget/OffersRankingWidget";
 
 
 function Dashboard(props) {
@@ -33,8 +34,8 @@ function Dashboard(props) {
 
                         <Col className={classes.minorStructure}>
                             <Row><SalesChartWidget/></Row>
-                            <Row><SalesChartWidget/></Row>
-                            <Row><SalesChartWidget/></Row>
+                            <Row><OffersRankingWidget/></Row>
+
                         </Col>
 
                         <Col className={classes.minorStructure}>
