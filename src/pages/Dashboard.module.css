@@ -1,8 +1,14 @@
 .mainStructure {
+    position:absolute;
+    left: 2%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 5%;
+}
 
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%; 
-    gap: 15px 10px;
-    
-    
+.minorStructure{
+    display:flex;
+    flex-direction: column;
+
+row-gap: 30px;
 }

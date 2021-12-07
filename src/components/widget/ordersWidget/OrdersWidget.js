@@ -24,7 +24,7 @@ function OrdersWidget(props) {
                 <OrderType orderType={t("orders.returns")} quantity={props.quantity[2]} />
               </div>
               <div className={classes.ordersSummaryPosition}>
-                <OrdersSummary msg={t("orders.msg")}allOrders={30}/>
+                <OrdersSummary msg={t("orders.msg")}allOrders={props.quantity[0]+props.quantity[1]+props.quantity[2]}/>
               </div>
             </div>
           </Card.Body>
