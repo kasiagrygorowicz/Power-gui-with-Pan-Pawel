@@ -12,9 +12,10 @@
   "logout":"Wyloguj",
 
   "ordersW": "Zamówienia",
-  "dailyTips": "Codzienne porady",
+  "dailyTipsW": "Codzienne porady",
   "salesQualityW" : "Jakość sprzedaży",
   "clientsOpinionsW": "Opinie klientów",
+
 
   "orders" :{
     "notsend":"Niewysłane",

@@ -11,9 +11,11 @@
   "addAccount": "Add Account",
   "logout": "Log out",
   "ordersW": "Orders",
-  "dailyTips": "Daily Tips",
+  "dailyTipsW": "Daily Tips",
   "salesQualityW": "Sales quality",
   "clientsOpinionsW": "Clients Opinions",
+
+
   "orders": {
     "notsend": "Not send",
     "notpaid": "Not paid",
