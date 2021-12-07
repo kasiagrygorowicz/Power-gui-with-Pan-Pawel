@@ -9,6 +9,5 @@
 .minorStructure{
     display:flex;
     flex-direction: column;
-    position:relative;
-row-gap: 15%;
+row-gap: 5%;
 }

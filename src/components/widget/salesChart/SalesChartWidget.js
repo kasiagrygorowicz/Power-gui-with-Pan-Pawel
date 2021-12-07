@@ -13,12 +13,14 @@ return(
     <Widget>
         <Card.Body>
             <Card.Title className={widgetClasses.titleStyle}>{t("salesChartW")}</Card.Title>
+            <div>
             <div className={'image'} style={{ width: '250px' }}>
-              <img src={imag} style={{ height: '170px', width: '250px', paddingLeft: '25px', display: 'flex', flexDirection: '5px' }} />
+              <img src={imag} style={{ height: '170px', width: '250px', paddingLeft: '25px', display: 'flex' }} />
             </div>
           <div className={'chart-but'} >
             <span>Select time</span>
           </div>
+            </div>
         </Card.Body>
     </Widget>
 )
