@@ -1,5 +1,5 @@
-import Widget from "../../layout/widget/Widget";
-import widgetClasses from "../../layout/widget/Widget.module.css";
+import Widget from "../widget/Widget";
+import widgetClasses from "../widget/Widget.module.css";
 
 import Tip from "../dailyTipsWidget/Tip";
 import {useTranslation} from "react-i18next";

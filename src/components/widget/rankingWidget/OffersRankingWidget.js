@@ -1,9 +1,9 @@
-import widgetClasses from "../../layout/widget/Widget.module.css";
+import widgetClasses from "../widget/Widget.module.css";
 import { Card } from "react-bootstrap";
 import ListedItem from "./ListedItem";
 import classes from './OffersRankingWidget.module.css'
 import {StyledOffersRankingWitget} from "./StyledOffersRaningWidget.styled";
-import Widget from "../../layout/widget/Widget";
+import Widget from "../widget/Widget";
 
 function OffersRankingWidget(){
   var text ="Offer: Lorem ipsum dolor sit amet, consectetur dfgh adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."

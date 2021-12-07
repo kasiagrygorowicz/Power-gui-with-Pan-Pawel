@@ -1,5 +1,5 @@
 import {Card, Col, Container, Dropdown, Row} from "react-bootstrap";
-import widgetClasses from "../../layout/widget/Widget.module.css";
+import widgetClasses from "../widget/Widget.module.css";
 import classes from "./ClientsOpinions.module.css"
 import {ClientsOpinionsStyled} from "./ClientsOpinions.styled";
 import { Start } from "react-bootstrap-icons";

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Widget from "../../layout/widget/Widget";
+import Widget from "../widget/Widget";
 import {Card} from "react-bootstrap";
 
 export const ClientsOpinionsStyled = styled(Card) `
