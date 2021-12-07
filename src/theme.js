@@ -1,4 +1,4 @@
-import 'bootstrap'
+
 
 export const lightTheme = {
 
@@ -13,7 +13,7 @@ export const lightTheme = {
 
     widget: {
         backgroundColor: '#FFFFFF',
-        color: '#0D6EFD'
+        borderedColor: '#0D6EFD'
     },
 
     inputColor: '#fff',

@@ -48,7 +48,7 @@ function TopNavBar(props){
     ]
 
     return(
-        <StyledNavbar expand={false}>
+        <StyledNavbar className={classes.navbar} expand={false}>
             <Container fluid>
                 <Navbar.Brand className={classes.logo} href="#">{t('dashboardName')}</Navbar.Brand>
                 {/* <LanguageController changeLanguage={props.i18n}/> */}

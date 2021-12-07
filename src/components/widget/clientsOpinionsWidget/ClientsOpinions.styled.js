@@ -7,5 +7,5 @@ export const ClientsOpinionsStyled = styled(Card) `
     width: 420px;
     border-radius: 40px;
     border-width: 3px;
-    border-color: ${({ theme }) => theme.widget.color};
+    border-color: ${({ theme }) => theme.widget.borderedColor};
 `

@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+.navbar {
+    margin-bottom: 40px;
+}
+
 .toggle {
     background-color: #ffffff;
 }
