@@ -44,7 +44,7 @@ function TopNavBar(props){
     [
         "Megan Thee Stalion",
         "Magda Gesler",
-        "Pan Paweł"
+        "Harry Potter"
     ]
 
     return(
@@ -64,7 +64,7 @@ function TopNavBar(props){
 
                         <Dropdown.Menu>
                             {languages.map(l => 
-                                <Dropdown.Item eventKey={l} >{l}</Dropdown.Item>
+                                <Dropdown.Item eventKey={l}  active={l===selectedLanguage}>{l}</Dropdown.Item>
                                 )}
                             {/* <Dropdown.Item  href="#/action-1">English</Dropdown.Item>
                             <Dropdown.Item  href="#/action-2">Polski</Dropdown.Item> */}

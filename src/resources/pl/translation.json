@@ -13,6 +13,8 @@
 
   "ordersW": "Zamówienia",
   "dailyTips": "Codzienne porady",
+  "salesQualityW" : "Jakość sprzedaży",
+  "clientsOpinionsW": "Opinie klientów",
 
   "orders" :{
     "notsend":"Niewysłane",
@@ -21,7 +23,7 @@
     "msg":"Oczekujące zamówienia"
   },
 
-  "salesQualityW" : "Jakość sprzedaży",
+
   "salesQuality": {
     "msg" : "Twój roczny wynik jakosci sprzedaży",
     "q" : "Co musisz poprawić",
@@ -30,5 +32,13 @@
       "2": "zarzadzanie czasem",
       "3": "skrupulatność"
     }
+  },
+
+  "clientsOpinions": {
+    "p": "pozytywne",
+    "n": "negatywne",
+    "a": "wszystkie"
   }
+
+
 }

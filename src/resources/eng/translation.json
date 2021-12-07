@@ -1,40 +1,37 @@
 {
   "login-label": "Log in",
-  "email" : "Email",
-  "psw" : "Password",
-  "new-user-question":"New user?",
-  "signup-redirect":"Sign Up here!",
-  "dashboardName":"Seller Dashboard",
-  "settings":"Settings",
-  "accountDetails":"Account Details",
-  "switchAccount":"Switch Account",
-  "addAccount":"Add Account",
-  "logout":"Log out",
-
-
+  "email": "Email",
+  "psw": "Password",
+  "new-user-question": "New user?",
+  "signup-redirect": "Sign Up here!",
+  "dashboardName": "Seller Dashboard",
+  "settings": "Settings",
+  "accountDetails": "Account Details",
+  "switchAccount": "Switch Account",
+  "addAccount": "Add Account",
+  "logout": "Log out",
   "ordersW": "Orders",
   "dailyTips": "Daily Tips",
-
-
-  "orders" :{
-    "notsend":"Not send",
-    "notpaid":"Not paid",
-    "returns":"Returns",
-    "msg":"All pending orders"
+  "salesQualityW": "Sales quality",
+  "clientsOpinionsW": "Clients Opinions",
+  "orders": {
+    "notsend": "Not send",
+    "notpaid": "Not paid",
+    "returns": "Returns",
+    "msg": "All pending orders"
   },
-
-  "salesQualityW" : "Sales quality",
   "salesQuality": {
-    "msg" : "Your annual sales quality score is",
-    "q" : "What you need to improve",
+    "msg": "Your annual sales quality score is",
+    "q": "What you need to improve",
     "aspects": {
       "1": "courtesy",
       "2": "time management",
       "3": "meticulousness"
     }
+  },
+  "clientsOpinions": {
+    "p": "positive",
+    "n": "negative",
+    "a": "all"
   }
-
-
-
-
 }
