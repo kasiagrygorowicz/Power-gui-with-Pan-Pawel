@@ -11,6 +11,7 @@
   "dailyTipsW": "Codzienne porady",
   "salesQualityW" : "Jakość sprzedaży",
   "clientsOpinionsW": "Opinie klientów",
+  "salesChartW": "Wykres Sprzedaży",
 
 
   "orders" :{
@@ -32,9 +33,9 @@
   },
 
   "clientsOpinions": {
-    "p": "pozytywne",
-    "n": "negatywne",
-    "a": "wszystkie"
+    "p": "Pozytywne",
+    "n": "Negatywne",
+    "a": "Wszystkie"
   },
 
   "login": {

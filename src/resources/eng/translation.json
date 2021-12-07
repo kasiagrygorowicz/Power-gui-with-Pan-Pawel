@@ -10,6 +10,7 @@
   "dailyTipsW": "Daily Tips",
   "salesQualityW": "Sales quality",
   "clientsOpinionsW": "Clients Opinions",
+  "salesChartW": "Sales Chart",
 
 
   "orders": {
@@ -28,9 +29,9 @@
     }
   },
   "clientsOpinions": {
-    "p": "positive",
-    "n": "negative",
-    "a": "all"
+    "p": "Positive",
+    "n": "Negative",
+    "a": "All"
   },
 
   "login": {

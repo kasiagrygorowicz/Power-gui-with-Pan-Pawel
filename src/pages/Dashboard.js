@@ -14,6 +14,7 @@ import classes from "./Dashboard.module.css";
 import SalesQualityWidget from "../components/widget/salesQualityWidget/SalesQualityWidget";
 import OrdersWidget from "../components/widget/ordersWidget/OrdersWidget";
 import ClientsOpinionsWidget from "../components/widget/clientsOpinionsWidget/ClientsOpinionsWidget";
+import SalesChartWidget from "../components/widget/salesChart/SalesChartWidget";
 
 
 
@@ -30,6 +31,7 @@ function Dashboard(props) {
           <Row>
             <Col>
               <OrdersWidget quantity={data}/>
+              <SalesChartWidget/>
             </Col>
             <Col>
               <DailyTipsWidget />
