@@ -9,6 +9,7 @@ export const lightTheme = {
 
     navbar: {
         backgroundColor: '#3D8BFD',
+        circleColor: '#FFFFFF'
     },
 
     widget: {
@@ -26,7 +27,8 @@ export const darkTheme = {
     toggleColor: '#FFFFFF',
 
     navbar: {
-        backgroundColor: '#495057'
+        backgroundColor: '#495057',
+        circleColor: '#343A40'
     },
 
     widget: {
