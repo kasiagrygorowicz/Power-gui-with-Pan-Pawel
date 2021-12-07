@@ -1,12 +1,20 @@
 import classes from './ListedItem.module.css'
+import {Star, StarFill} from "react-bootstrap-icons";
 
-function ListedItem({category,offerName}) {
-  return (
-    <div>
-      <h6 className={classes.categoryLabel}>{category}</h6>
-      <div className={classes.offerLabel}>{offerName}</div>
-    </div>
-  );
+function ListedItem({image, title, description}) {
+    return (
+        <div>
+            <div className={classes.item}>
+                <div className={classes.image}>
+                    <img src="../../../resources/images/kaczka.jpg"/>
+                </div>
+
+                <div className={classes.description}>
+                    {description}
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default ListedItem;

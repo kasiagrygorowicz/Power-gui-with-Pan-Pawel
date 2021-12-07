@@ -1,9 +1,9 @@
-import classes from "./ClientsOpinions.module.css"
+import classes from "./Opinion.module.css"
 import { Star, StarFill } from "react-bootstrap-icons";
 
 function Opinion({description, stars, date}) {
     return (
-        <div className={classes.opinion}>
+        <div>
             <div className={classes.rating}>
                 <div className={classes.stars}>
                     <StarFill/>
@@ -16,7 +16,7 @@ function Opinion({description, stars, date}) {
                     {date}
                 </div>
             </div>
-            <div className={classes.description}>
+            <div>
                 {description}
             </div>
             <hr/>

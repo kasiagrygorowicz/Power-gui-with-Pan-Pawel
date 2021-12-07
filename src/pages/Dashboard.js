@@ -15,6 +15,7 @@ import SalesQualityWidget from "../components/widget/salesQualityWidget/SalesQua
 import OrdersWidget from "../components/widget/ordersWidget/OrdersWidget";
 import ClientsOpinionsWidget from "../components/widget/clientsOpinionsWidget/ClientsOpinionsWidget";
 import SalesChartWidget from "../components/widget/salesChart/SalesChartWidget";
+import OffersRankingWidget from "../components/widget/rankingWidget/OffersRankingWidget";
 
 
 
@@ -48,7 +49,7 @@ function Dashboard(props) {
               <SalesQualityWidget />
             </Row>
           </Col>
-          {/* <OffersRankingWidget/> */}
+           <OffersRankingWidget/>
           <ClientsOpinionsWidget/>
         </Container>
       </StyledDashboard>
