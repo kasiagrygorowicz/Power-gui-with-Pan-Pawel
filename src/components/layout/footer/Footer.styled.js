@@ -16,4 +16,5 @@ export const FooterStyled = styled(Navbar) `
   flex-direction: column;
   position: absolute;
   bottom: -40px;
+  left:0;
 `
